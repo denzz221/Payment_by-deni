@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pembayaran Deni</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom right, #000000, #330000);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    h2 {
+      text-shadow: 0 0 10px red;
+    }
+    .button {
+      display: block;
+      width: 220px;
+      margin: 20px auto;
+      padding: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 10px #ff0000;
+    }
+    .button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #ff3333;
+    }
+    .dana {
+      background-color: #cc0000;
+    }
+    .gopay {
+      background-color: #990000;
+    }
+    .telegram {
+      background-color: #660000;
+    }
+    .message {
+      margin-top: 25px;
+      font-size: 18px;
+      font-weight: bold;
+      white-space: pre-wrap;
+      color: #ffcccc;
+      text-shadow: 0 0 5px red;
+    }
+  </style>
+</head>
+<body>
+  <h2>PAYMENT DENI - DARK EDITION</h2>
+
+  <button class="button dana" onclick="showMessage('081220116754\n𝘿𝙖𝙣𝙖 𝙨𝙚𝙧𝙩𝙖𝙠𝙖𝙣 𝙗𝙪𝙠𝙩𝙞 𝙩𝙛')">Bayar via DANA</button>
+
+  <button class="button gopay" onclick="showMessage('085718322648\n𝗦𝗘𝗥𝗧𝗔𝗞𝗔𝗡 𝗕𝗨𝗞𝗧𝗜 𝗧𝗙')">Bayar via Gopay</button>
+
+  <div class="message" id="payment-info"></div>
+
+  <a href="https://t.me/deni_not_style" target="_blank">
+    <button class="button telegram">𝗝𝗜𝗞𝗔 𝗦𝗨𝗗𝗛 𝗞𝗟𝗜𝗞 𝗜𝗡𝗜 𝗦𝗘𝗥𝗧𝗔𝗞𝗔𝗡 𝗞𝗘 𝗧𝗘𝗟𝗘 𝗜𝗡𝗜!</button>
+  </a>
+
+  <script>
+    function showMessage(text) {
+      document.getElementById('payment-info').innerText = text;
+    }
+  </script>
+</body>
+</html>
